@@ -17,6 +17,16 @@ h6 {
   color: #e3f6f5;
 }
 
+::-moz-selection { /* Code for Firefox */
+  color: #00adb5;
+  background: white;
+}
+
+::selection {
+  color:  #00adb5;
+  background: White;
+}
+
 a {
   color: #222831;
   transition: all 0.5s ease-in-out;
@@ -1133,6 +1143,7 @@ footer .credits a {
   vertical-align: middle;
   -webkit-user-select: none;
   -moz-user-select: none;
+  -user-selection: none;
   -ms-user-select: none;
   user-select: none;
   font-size: 1rem;
