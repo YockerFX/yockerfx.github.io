@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Anmeldung | Ardenne Shop</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="icon" type="image/png" href="/img/favicon.png" />
+
+<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+
+<link rel="stylesheet" type="text/css" href="https://colorlib.com/etc/cf/ContactFrom_v3/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" type="text/css" href="/css/animate.css">
+
+<link rel="stylesheet" type="text/css" href="/css/hamburgers.min.css">
+
+<link rel="stylesheet" type="text/css" href="/css/select2.min.css">
+
+<link rel="stylesheet" type="text/css" href="/css/extras.css">
+<link rel="stylesheet" type="text/css" href="/css/anmeldung.css">
+
+<meta name="robots" content="noindex, follow">
+<script nonce="b466abbb-6f19-440d-926e-52b21684e01c">(function(w,d){!function(bv,bw,bx,by){bv[bx]=bv[bx]||{};bv[bx].executed=[];bv.zaraz={deferred:[],listeners:[]};bv.zaraz.q=[];bv.zaraz._f=function(bz){return function(){var bA=Array.prototype.slice.call(arguments);bv.zaraz.q.push({m:bz,a:bA})}};for(const bB of["track","set","debug"])bv.zaraz[bB]=bv.zaraz._f(bB);bv.zaraz.init=()=>{var bC=bw.getElementsByTagName(by)[0],bD=bw.createElement(by),bE=bw.getElementsByTagName("title")[0];bE&&(bv[bx].t=bw.getElementsByTagName("title")[0].text);bv[bx].x=Math.random();bv[bx].w=bv.screen.width;bv[bx].h=bv.screen.height;bv[bx].j=bv.innerHeight;bv[bx].e=bv.innerWidth;bv[bx].l=bv.location.href;bv[bx].r=bw.referrer;bv[bx].k=bv.screen.colorDepth;bv[bx].n=bw.characterSet;bv[bx].o=(new Date).getTimezoneOffset();if(bv.dataLayer)for(const bI of Object.entries(Object.entries(dataLayer).reduce(((bJ,bK)=>({...bJ[1],...bK[1]})))))zaraz.set(bI[0],bI[1],{scope:"page"});bv[bx].q=[];for(;bv.zaraz.q.length;){const bL=bv.zaraz.q.shift();bv[bx].q.push(bL)}bD.defer=!0;for(const bM of[localStorage,sessionStorage])Object.keys(bM||{}).filter((bO=>bO.startsWith("_zaraz_"))).forEach((bN=>{try{bv[bx]["z_"+bN.slice(7)]=JSON.parse(bM.getItem(bN))}catch{bv[bx]["z_"+bN.slice(7)]=bM.getItem(bN)}}));bD.referrerPolicy="origin";bD.src="/cdn-cgi/zaraz/s.js?z="+btoa(encodeURIComponent(JSON.stringify(bv[bx])));bC.parentNode.insertBefore(bD,bC)};["complete","interactive"].includes(bw.readyState)?zaraz.init():bv.addEventListener("DOMContentLoaded",zaraz.init)}(w,d,"zarazData","script");})(window,document);</script></head>
+<body>
+<div class="bg-contact3" style="background-image: url('/img/bg-img.jpg');">
+<div class="container-contact3">
+<div class="wrap-contact3">
+<form class="contact3-form validate-form">
+<span class="contact3-form-title">
+Ardenne Shop
+</span>
+<div class="wrap-contact3-form-radio">
+<div class="contact3-form-radio m-r-42">
+<input class="input-radio3" id="radio1" type="radio" name="choice" value="say-hi" checked="checked">
+<label class="label-radio3" for="radio1">
+Anmeldung
+</label>
+</div>
+<div class="contact3-form-radio">
+<input class="input-radio3" id="radio2" type="radio" name="choice" value="get-quote">
+<label class="label-radio3" for="radio2">
+Regestrierung
+</label>
+</div>
+</div>
+<div class="wrap-input3 validate-input" data-validate="Benutzername benötigt">
+<input class="input3" type="text" name="name" placeholder="Dein Name">
+<span class="focus-input3"></span>
+</div>
+<div class="wrap-input3 validate-input" data-validate="Gültige Email benötigt: ex@abc.xyz">
+<input class="input3" type="email" name="email" placeholder="Dein Email">
+<span class="focus-input3"></span>
+</div>
+<div class="wrap-input3 input3-select">
+<div>
+<select class="selection-2" name="service">
+<option>Geschlecht</option>
+<option>Männlich</option>
+<option>Weiblich</option>
+<option>Divers</option>
+</select>
+</div>
+<span class="focus-input3"></span>
+</div>
+<div class="wrap-input3 validate-input" data-validate="Passwort benötigt">
+<input class="input3" type="password" name="pwd" placeholder="Dein Passwort">
+<span class="focus-input3"></span>
+</div>
+<div class="container-contact3-form-btn">
+<button class="contact3-form-btn">
+Submit
+</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+<div id="dropDownSelect1"></div>
+
+<script src="/js/jquery-3.2.1.min.js"></script>
+
+<script src="/js/popper.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+
+<script src="/js/select2.min.js"></script>
+<script>
+		$(".selection-2").select2({
+			minimumResultsForSearch: 20,
+			dropdownParent: $('#dropDownSelect1')
+		});
+	</script>
+
+<script src="/js/anmeldung.js"></script>
+
+</body>
+</html>
