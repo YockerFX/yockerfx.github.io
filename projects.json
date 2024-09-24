@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Portfolio",
+    "companyLogo": "https://avatars.githubusercontent.com/u/61665083?v=4",
+    "companyName": "YockerFX",
+    "completion_year": "2024",
+    "description": [
+      "Built using HTML, CSS, and JavaScript",
+      "Responsive design",
+      "Deployed on GitHub Pages"
+    ],
+    "link": "#"
+  },
+  {
+    "title": "Autofill FedEx label",
+    "companyLogo": "/img/egg.gif",
+    "companyName": "EndgameGear",
+    "completion_year": "2024",
+    "description": [
+      "Browser extension",
+      "Built using HTML, CSS, and JavaScript",
+      "Fills in static data automatically"
+    ],
+    "link": "https://github.com/ToolHood/returnlabel_FedEx"
+  },
+  {
+    "title": "Sparepart Tool",
+    "companyLogo": "/img/nbl.png",
+    "companyName": "NobleChairs",
+    "completion_year": "2024",
+    "description": [
+      "Browser extension",
+      "Built using HTML, CSS, and JavaScript",
+      "Copies data from Zendesk and pastes it into shipstream"
+    ],
+    "link": "https://github.com/ToolHood/shipstreamData"
+  }
+]
