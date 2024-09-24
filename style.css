@@ -1,0 +1,143 @@
+body {
+  background: #F4F7FD;
+  margin-top: 20px;
+}
+
+.card-margin {
+  margin-bottom: 1.875rem;
+}
+
+.card {
+  border: 0;
+  box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+.card-header.no-border {
+  border: 0;
+}
+
+.card .card-header {
+  background: none;
+  padding: 0 0.9375rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  min-height: 50px;
+}
+
+.widget-49 .widget-49-title-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  /* Added padding around the logo and project title */
+}
+
+.widget-49 .widget-49-title-wrapper .widget-49-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2d2d2d;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  aspect-ratio: 1 / 1;
+  /* Ensure the aspect ratio remains 1:1 */
+  padding: 0;
+  /* No padding inside the circle */
+}
+
+.widget-49 .widget-49-title-wrapper .widget-49-logo img {
+  width: 100%;
+  /* Fill the circle */
+  height: 100%;
+  /* Fill the circle */
+  object-fit: cover;
+  /* Ensures the image fills the circle without distortion */
+  border-radius: 50%;
+  /* Ensure the image takes the shape of the circle */
+}
+
+.widget-49 .widget-49-title-wrapper .widget-49-project-info {
+  margin-left: 1rem;
+  padding-left: 10px;
+  /* Added padding to the left of the project name */
+}
+
+.widget-49 .widget-49-title-wrapper .widget-49-project-info .widget-49-project-title {
+  color: #3c4142;
+  font-size: 14px;
+}
+
+.widget-49 .widget-49-title-wrapper .widget-49-project-info .widget-49-project-time {
+  color: #B1BAC5;
+  font-size: 13px;
+}
+
+.widget-49 .widget-49-project-description {
+  font-weight: 400;
+  font-size: 13px;
+  margin-top: .5rem;
+}
+
+.widget-49 .widget-49-project-description .widget-49-item {
+  display: list-item;
+  color: #727686;
+}
+
+/* Buttons container */
+.widget-49 .widget-49-project-action {
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  /* Adds space between the two buttons */
+}
+
+/* Company Button */
+.widget-49 .widget-49-project-action a.company-button {
+  background-color: #1abc9c;
+  color: #ffffff;
+  border-radius: 4px;
+  padding: 8px 15px;
+  font-size: 12px;
+  text-decoration: none;
+  border: 2px solid #1abc9c;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.widget-49 .widget-49-project-action a.company-button:hover {
+  background-color: #16a085;
+  border-color: #16a085;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* View Project Button */
+.widget-49 .widget-49-project-action a.btn-primary {
+  background-color: #3498db;
+  color: #ffffff;
+  border-radius: 4px;
+  padding: 8px 15px;
+  font-size: 12px;
+  text-decoration: none;
+  border: 2px solid #3498db;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.widget-49 .widget-49-project-action a.btn-primary:hover {
+  background-color: #2980b9;
+  border-color: #2980b9;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .widget-49 .widget-49-title-wrapper .widget-49-logo {
+    width: 3rem;
+    height: 3rem;
+  }
+}
