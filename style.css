@@ -1,143 +1,261 @@
-body {
-  background: #F4F7FD;
-  margin-top: 20px;
-}
-
-.card-margin {
-  margin-bottom: 1.875rem;
-}
-
-.card {
-  border: 0;
-  box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
-  background-color: #ffffff;
-  border-radius: 8px;
-}
-
-.card-header.no-border {
-  border: 0;
-}
-
-.card .card-header {
-  background: none;
-  padding: 0 0.9375rem;
-  font-weight: 500;
-  display: flex;
-  align-items: center;
-  min-height: 50px;
-}
-
-.widget-49 .widget-49-title-wrapper {
-  display: flex;
-  align-items: center;
-  padding: 10px 0;
-  /* Added padding around the logo and project title */
-}
-
-.widget-49 .widget-49-title-wrapper .widget-49-logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #2d2d2d;
-  width: 4rem;
-  height: 4rem;
-  border-radius: 50%;
-  overflow: hidden;
-  flex-shrink: 0;
-  aspect-ratio: 1 / 1;
-  /* Ensure the aspect ratio remains 1:1 */
+/* General Reset */
+* {
+  box-sizing: border-box;
   padding: 0;
-  /* No padding inside the circle */
+  margin: 0;
 }
 
-.widget-49 .widget-49-title-wrapper .widget-49-logo img {
-  width: 100%;
-  /* Fill the circle */
-  height: 100%;
-  /* Fill the circle */
-  object-fit: cover;
-  /* Ensures the image fills the circle without distortion */
-  border-radius: 50%;
-  /* Ensure the image takes the shape of the circle */
+body {
+  background: #121212;
+  font-family: "Space Grotesk", sans-serif;
+  color: #fff;
+  margin: 0;
+  padding: 0;
 }
 
-.widget-49 .widget-49-title-wrapper .widget-49-project-info {
-  margin-left: 1rem;
-  padding-left: 10px;
-  /* Added padding to the left of the project name */
-}
-
-.widget-49 .widget-49-title-wrapper .widget-49-project-info .widget-49-project-title {
-  color: #3c4142;
-  font-size: 14px;
-}
-
-.widget-49 .widget-49-title-wrapper .widget-49-project-info .widget-49-project-time {
-  color: #B1BAC5;
-  font-size: 13px;
-}
-
-.widget-49 .widget-49-project-description {
-  font-weight: 400;
-  font-size: 13px;
-  margin-top: .5rem;
-}
-
-.widget-49 .widget-49-project-description .widget-49-item {
-  display: list-item;
-  color: #727686;
-}
-
-/* Buttons container */
-.widget-49 .widget-49-project-action {
-  text-align: right;
+/* Centered Search Bar */
+.search-container {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;
+  /* Creates space around the search bar */
+}
+
+.search-bar {
+  width: 40%;
+  /* Adjust width as needed */
+  padding: 12px 20px;
+  border: 2px solid #292929;
+  border-radius: 25px;
+  background-color: #292929;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.search-bar::placeholder {
+  color: #fff;
+}
+
+.search-bar:focus {
+  border-color: #24df66;
+  background-color: #1f1f1f;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 3em;
+  font-weight: 700;
+}
+
+.hero-text p {
+  font-size: 1.2em;
+  font-weight: 300;
+}
+
+/* Project Section */
+h3 {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.7;
+  font-weight: 300;
+  color: #fff;
+}
+
+.description {
+  white-space: wrap;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Centered Grid Layout */
+.wrap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* 3 cards per row */
+  gap: 24px;
+  /* Space between cards */
+  justify-items: center;
+  /* Centers the cards horizontally */
+  padding: 24px;
+  max-width: 1200px;
+  /* Optional: limit the maximum width */
+  margin: 0 auto;
+  /* Center the grid within the body */
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  padding: 24px;
+  background: #292929;
+  width: 100%;
+}
+
+.box-top {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.title-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box-title {
+  border-left: 4px solid #24df66;
+  padding-left: 10px;
+}
+
+.user-follow-info {
+  color: #b3b3b3;
+}
+
+.created {
+  color: #b3b3b3;
+  padding: -0.5rem;
+}
+
+/* Button Group */
+.button-group {
+  display: flex;
+  gap: 12px;
   justify-content: flex-end;
-  gap: 15px;
-  /* Adds space between the two buttons */
 }
 
-/* Company Button */
-.widget-49 .widget-49-project-action a.company-button {
-  background-color: #1abc9c;
-  color: #ffffff;
-  border-radius: 4px;
-  padding: 8px 15px;
-  font-size: 12px;
-  text-decoration: none;
-  border: 2px solid #1abc9c;
-  transition: background-color 0.3s ease, border-color 0.3s ease;
+/* Button Styles */
+.button {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: 300;
+  padding: 12px 16px;
+  border-radius: 25px;
+  color: #141A16;
+  background: #24df66;
+  transition: background 0.6s ease;
 }
 
-.widget-49 .widget-49-project-action a.company-button:hover {
-  background-color: #16a085;
-  border-color: #16a085;
-  color: #ffffff;
-  text-decoration: none;
+.button:hover {
+  color: #fff;
+  background: #141A16;
 }
 
-/* View Project Button */
-.widget-49 .widget-49-project-action a.btn-primary {
-  background-color: #3498db;
-  color: #ffffff;
-  border-radius: 4px;
-  padding: 8px 15px;
-  font-size: 12px;
-  text-decoration: none;
-  border: 2px solid #3498db;
-  transition: background-color 0.3s ease, border-color 0.3s ease;
-}
-
-.widget-49 .widget-49-project-action a.btn-primary:hover {
-  background-color: #2980b9;
-  border-color: #2980b9;
-  color: #ffffff;
-  text-decoration: none;
+/* Responsive Grid */
+@media (max-width: 1024px) {
+  .wrap {
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 cards per row on medium screens */
+  }
 }
 
 @media (max-width: 768px) {
-  .widget-49 .widget-49-title-wrapper .widget-49-logo {
-    width: 3rem;
-    height: 3rem;
+  .wrap {
+    grid-template-columns: repeat(1, 1fr);
+    /* 1 card per row on small screens */
+  }
+
+  .search-bar {
+    width: 80%;
+    /* Adjust width for mobile view */
+  }
+}
+
+/* Responsive Design for Title Flex */
+@media (min-width: 320px) {
+  .title-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+  }
+
+  .user-follow-info {
+    margin-top: 6px;
+  }
+}
+
+@media (min-width: 460px) {
+  .title-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+  }
+
+  .user-follow-info {
+    margin-top: 6px;
+  }
+}
+
+@media (min-width: 640px) {
+  .box {
+    flex-basis: calc(50% - 12px);
+  }
+
+  .title-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+  }
+
+  .user-follow-info {
+    margin-top: 6px;
+  }
+}
+
+@media (min-width: 840px) {
+  .title-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+  }
+
+  .user-follow-info {
+    margin-top: 6px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .box {
+    flex-basis: calc(25% - 18px);
   }
 }
