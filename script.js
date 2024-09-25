@@ -9,31 +9,19 @@ function generateProjectCards(data) {
 
     data.forEach(project => {
         const card = document.createElement("div");
-        card.className = "col-lg-4 project-card";
+        card.className = "box";
 
         const cardHTML = `
-            <div class="card card-margin">
-                <div class="card-body pt-0">
-                    <div class="widget-49">
-                        <div class="widget-49-title-wrapper">
-                            <div class="widget-49-logo">
-                                <img src="${project.companyLogo}" alt="${project.title} logo">
-                            </div>
-                            <div class="widget-49-project-info">
-                                <span class="widget-49-project-title">${project.title}</span>
-                                <br>
-                                <span class="widget-49-project-time">Completed: ${project.completion_year}</span>
-                            </div>
-                        </div>
-                        <ol class="widget-49-project-description">
-                            ${project.description.map(item => `<li class="widget-49-item"><span>${item}</span></li>`).join('')}
-                        </ol>
-                        <div class="widget-49-project-action">
-                            <a href="#" class="company-button">${project.companyName}</a> <!-- Company button first -->
-                            <a href="${project.link}" class="btn btn-sm btn-primary">View Project</a> <!-- View Project button second -->
-                        </div>
-                    </div>
+            <div class="box-top">
+                <div class="title-flex">
+                    <h3 class="box-title">${project.title}</h3>
+                    <p class="user-follow-info">Finished: ${project.completion_year}</p>
                 </div>
+                <p class="description">${project.description.join(", ")}</p>
+                <p class="created">Created for: ${project.companyName}</p>
+            </div>
+            <div class="button-group">
+                <a href="${project.link}" class="button">View Project</a>
             </div>
         `;
 
@@ -48,10 +36,10 @@ function searchProjects() {
     input = document.getElementById("search-input");
     filter = input.value.toLowerCase();
     gallery = document.getElementById("project-gallery");
-    cards = gallery.getElementsByClassName("project-card");
+    cards = gallery.getElementsByClassName("box");
 
     for (i = 0; i < cards.length; i++) {
-        title = cards[i].getElementsByClassName("widget-49-project-title")[0];
+        title = cards[i].getElementsByClassName("box-title")[0];
         txtValue = title.textContent || title.innerText;
 
         if (txtValue.toLowerCase().indexOf(filter) > -1) {
@@ -61,3 +49,45 @@ function searchProjects() {
         }
     }
 }
+
+// Function to animate the document title
+// Function to animate the document title
+function animateTitle(text) {
+    let index = 0;
+    let isDeleting = false;
+    let currentTitle = "| "; // Start with "| "
+
+    function type() {
+        if (!isDeleting && index <= text.length) {
+            // Add one letter at a time to "| "
+            currentTitle = `| ${text.slice(0, index++)}`;
+            document.title = currentTitle;
+        } else if (isDeleting && index > 0) {
+            // Remove one letter at a time but keep "| "
+            currentTitle = `| ${text.slice(0, --index)}`;
+            document.title = currentTitle;
+        }
+
+        // If we've finished typing "YockerFX" and are not deleting, start deleting
+        if (index === text.length && !isDeleting) {
+            isDeleting = true;
+            setTimeout(type, 3000); // Pause before deleting
+        }
+        // If we're done deleting but "| " is left, start typing again
+        else if (index === 0 && isDeleting) {
+            isDeleting = false;
+            setTimeout(type, 1000); // Pause before re-typing
+        } else {
+            // Continue typing or deleting
+            setTimeout(type, isDeleting ? 250 : 500);
+        }
+    }
+
+    // Start the typing effect
+    type();
+}
+
+// Call the function with the desired text
+animateTitle("YockerFX ");
+
+
