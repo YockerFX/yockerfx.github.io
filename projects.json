@@ -3,6 +3,7 @@
     "title": "Portfolio",
     "companyLogo": "https://avatars.githubusercontent.com/u/61665083?v=4",
     "companyName": "YockerFX",
+    "companyLink": "#",
     "completion_year": "2024",
     "description": [
       "Built using HTML, CSS, and JavaScript",
@@ -15,6 +16,7 @@
     "title": "Autofill FedEx label",
     "companyLogo": "/img/egg.gif",
     "companyName": "EndgameGear",
+    "companyLink": "https://www.endgamegear.com/",
     "completion_year": "2024",
     "description": [
       "Browser extension",
@@ -27,6 +29,7 @@
     "title": "Sparepart Tool",
     "companyLogo": "/img/nbl.png",
     "companyName": "NobleChairs",
+    "companyLink": "https://www.noblechairs.de/",
     "completion_year": "2024",
     "description": [
       "Browser extension",
