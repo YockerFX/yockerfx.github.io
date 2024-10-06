@@ -37,5 +37,31 @@
       "Copies data from Zendesk and pastes it into shipstream"
     ],
     "link": "https://github.com/ToolHood/shipstreamData"
+  },
+  {
+    "title": "Discord AI Chat Bot",
+    "companyLogo": "https://avatars.githubusercontent.com/u/61665083?v=4",
+    "companyName": "Hacktober",
+    "companyLink": "-",
+    "completion_year": "2024",
+    "description": [
+      "Discord Chatbot",
+      "transformed from Python",
+      "to Javascript"
+    ],
+    "link": "https://github.com/halcyon-past/Harem-No-Jutsu"
+  },
+  {
+    "title": "Javascript Handbook",
+    "companyLogo": "https://avatars.githubusercontent.com/u/61665083?v=4",
+    "companyName": "Hacktober",
+    "companyLink": "-",
+    "completion_year": "2024",
+    "description": [
+      "Webpage",
+      "Built using HTML, CSS, and JavaScript",
+      "(JS Docs for beginner)"
+    ],
+    "link": "https://github.com/YockerFX/javascript-handbook"
   }
 ]
