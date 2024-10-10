@@ -6,9 +6,7 @@
     "companyLink": "#",
     "completion_year": "2024",
     "description": [
-      "Built using HTML, CSS, and JavaScript",
-      "Responsive design",
-      "Deployed on GitHub Pages"
+      "Built using HTML, CSS, and JavaScript, with responsive design and deployed on Github Pages"
     ],
     "link": "#"
   },
@@ -19,9 +17,7 @@
     "companyLink": "https://www.endgamegear.com/",
     "completion_year": "2024",
     "description": [
-      "Browser extension",
-      "Built using HTML, CSS, and JavaScript",
-      "Fills in static data automatically"
+      "Browser extension built using HTML, CSS, and JavaScript which fills in static data automatically"
     ],
     "link": "https://github.com/ToolHood/returnlabel_FedEx"
   },
@@ -32,9 +28,7 @@
     "companyLink": "https://www.noblechairs.de/",
     "completion_year": "2024",
     "description": [
-      "Browser extension",
-      "Built using HTML, CSS, and JavaScript",
-      "Copies data from Zendesk and pastes it into shipstream"
+      "Browser extension, built using HTML, CSS, and JavaScrip, which copies data from Zendesk and pastes it into shipstream"
     ],
     "link": "https://github.com/ToolHood/shipstreamData"
   },
@@ -45,9 +39,7 @@
     "companyLink": "-",
     "completion_year": "2024",
     "description": [
-      "Discord Chatbot",
-      "transformed from Python",
-      "to Javascript"
+      "Discord Chatbot transformed from Python to Javascript"
     ],
     "link": "https://github.com/halcyon-past/Harem-No-Jutsu"
   },
@@ -58,10 +50,19 @@
     "companyLink": "-",
     "completion_year": "2024",
     "description": [
-      "Webpage",
-      "Built using HTML, CSS, and JavaScript",
-      "(JS Docs for beginner)"
+      "Webpage, built using HTML, CSS, and JavaScript (JS Docs for beginner)"
     ],
     "link": "https://github.com/YockerFX/javascript-handbook"
+  },
+    {
+    "title": "Excel Script",
+    "companyLogo": "https://avatars.githubusercontent.com/u/61665083?v=4",
+    "companyName": "YockerFX",
+    "companyLink": "#",
+    "completion_year": "2024",
+    "description": [
+      "This project contains an Excel Script that converts data from an Excel file into a JSON format."
+    ],
+    "link": "https://github.com/YockerFX/excel-script"
   }
 ]
